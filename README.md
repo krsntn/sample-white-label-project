@@ -1,34 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Project Overview
 
-## Getting Started
+This project is designed to showcase different themes for different clients based on the provided `clientId` parameter. By following the instructions below, you can easily switch between two client themes: `client1` and `client2`.
 
-First, run the development server:
+### Prerequisites
+
+Before you can run the project with different client themes, please make sure you have the following prerequisites installed on your system:
+
+- node.js (version 14.0.0 or higher)
+- pnpm (version 6.0.0 or higher)
+
+### Getting Started
+
+Follow these steps to set up and run the project with different client themes:
+
+1. Install the project dependencies using pnpm:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Start the development server with the desired clientId parameter:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+For client1 theme:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+clientId=client1 pnpm dev
+```
 
-## Learn More
+For client2 theme:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+clientId=client2 pnpm dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Open your web browser and navigate to the local development server url (http://localhost:3000).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Switching Between Themes
 
-## Deploy on Vercel
+When you run the project with the `clientId` parameter set to `client1`, you will see the `client1` theme in your web application. Similarly, when you run the project with the `clientId` parameter set to `client2`, you will see the `client2` theme.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Customizing Themes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To customize the themes for `client1` and `client2`, you can modify the project's source code and assets. Depending on the project structure, you may find theme-related configuration files or stylesheets that you can adjust to fit the specific requirements of each client.

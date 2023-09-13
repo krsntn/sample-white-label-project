@@ -12,7 +12,7 @@ function ClientStyle({
 
 export default ClientStyle;
 
-async function importClientStyles(clientId: string) {
+async function importClientStyles(clientId: string = "client1") {
   try {
     const styleModule = await import(`../clients/${clientId}/styles.css`);
     return styleModule.default;
